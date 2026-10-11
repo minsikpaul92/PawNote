@@ -109,6 +109,10 @@ Input: one fictional sentence ("Max is a Maltese who is allergic to chicken."). 
 
 **Fun mood meter (11.9 / D42):** `agentmish/dog-emotion-classifier-v2` — Apache-2.0, ViT-base, 85.6% accuracy on its small eval set, no training-dataset license stated. `Dewa/dog_emotion_v2` has no license tag, do not use.
 
+## Speech-to-text check (2026-10-10)
+
+`GET /v1/models` with our key (read-only): **25 models** on `api.tokenfactory.nebius.com`, **18** on the us-central1 URL. **No speech-to-text / audio model** (no whisper · asr · speech · audio · parakeet · canary · voxtral). Image-input models in the list: `openbmb/MiniCPM-V-4_5`, `moonshotai/Kimi-K2.6` (and K3 on the first URL), `google/gemma-3-27b-it`. So voice input in the pet onboarding ([pet-onboarding.ko.md](../../pet-onboarding.ko.md) §6.2) uses the **browser Web Speech API** for the transcript and Nemotron only for turning the text into fields. Re-check the list if a speech model is announced.
+
 ## Photo caption latency (09.1, 2026-10-07)
 
 `backend/scripts/measure_caption.py` — the 3 demo photos × 3 runs, MiniCPM-V-4.5, JSON `{caption, category}`, reasoning n/a, 120 max tokens, temperature 0.8, local images (no Cloudinary / DB). **Category right 8 / 9, latency median ≈ 1.2 s, max ≈ 1.3 s.** The first prompt got 4 / 9 because the sample "meal" photo is a dog beside a carrot and the sample "nap" photo is a dog lying on a bed with its mouth open; the category hints now say food next to or in the mouth of the pet is a meal, and lying calmly on a bed / blanket / rug is a nap. Captions are 1 short sentence, warm, name used once; no medical claims. Real-world accuracy still needs the team's 5-photo read (phase-09 DoD 1).
