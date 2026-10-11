@@ -6,7 +6,7 @@
 
 문서 우선순위 (Source of truth): **architecture.ko.md + phase 문서** (제품 흐름은 [full-process.ko.md](../full-process.ko.md), 스키마는 [phase-02](phase-02.md) + 각 phase migration, 모델 ID는 [notes/model-ids.md](notes/model-ids.md)) > [TODO.md](../TODO.md) (진행 순서) > [P0 playbook](../P0-ai-prompt-playbook.ko.md) (프롬프트 출발점) > [개발 계획](../README.ko.md) (배경·요약). 아래 문서가 위 문서와 다르면 위 문서가 맞고, 아래 문서를 고칩니다.
 
-**보조 스펙 (phase 번호 밖):** [전체 서비스 흐름 (Full Process)](../full-process.ko.md) · [시터 케어 루프 Plan B](../sitter-care-loop.ko.md) · [8bit Pet status room](../pet-status-room.ko.md) · [온보딩·데모 UX](../onboarding.ko.md) · [Tavily](../tavily.ko.md) · [로컬 env](../env-setup.ko.md) · [Devpost 제출](../../hackathon/devpost-submission.ko.md) · [CHANGELOG (패치노트 원본)](../../CHANGELOG.md)
+**보조 스펙 (phase 번호 밖):** [전체 서비스 흐름 (Full Process)](../full-process.ko.md) · [시터 케어 루프 Plan B](../sitter-care-loop.ko.md) · [8bit Pet status room](../pet-status-room.ko.md) · [펫 프로필 온보딩 (11.15)](../pet-profile-onboarding.ko.md) · [온보딩·데모 UX](../onboarding.ko.md) · [Tavily](../tavily.ko.md) · [로컬 env](../env-setup.ko.md) · [Devpost 제출](../../hackathon/devpost-submission.ko.md) · [CHANGELOG (패치노트 원본)](../../CHANGELOG.md)
 
 ## 의존 관계
 
