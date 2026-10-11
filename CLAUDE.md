@@ -242,7 +242,7 @@ Implement in FastAPI; all call **Nebius Token Factory** — Nemotron for text, M
 | `POST /api/ai/life-record` | Stage 5 — stay → Pet Life Record + RAG indexing |
 | `POST /api/ai/safety-check` | Stretch — label photo → JSON safety (+ Tavily sources, 8.7) |
 | `POST /api/ai/pet-photo` | P1 (11.15) — pet photo → breed guesses (≤ 3, owner confirms) + coat color |
-| `POST /api/ai/pet-voice` | P1 (11.15) — transcript → profile facts, each with a quote from the transcript; safety answers are never pre-selected |
+| `POST /api/ai/pet-voice` | 11.15 — audio (or text) → speech-to-text (external; Token Factory has none) → profile facts from Nemotron, each with a quote from the transcript; safety answers are never pre-selected |
 
 Model IDs and regions: `docs/plan/phases/notes/model-ids.md` (source of truth; checked with `GET /v1/models`) and phase-07/08 docs.
 

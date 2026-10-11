@@ -111,7 +111,7 @@ Input: one fictional sentence ("Max is a Maltese who is allergic to chicken."). 
 
 ## Speech-to-text check (2026-10-10)
 
-`GET /v1/models` with our key (read-only): **25 models** on `api.tokenfactory.nebius.com`, **18** on the us-central1 URL. **No speech-to-text / audio model** (no whisper · asr · speech · audio · parakeet · canary · voxtral). Image-input models in the list: `openbmb/MiniCPM-V-4_5`, `moonshotai/Kimi-K2.6` (and K3 on the first URL), `google/gemma-3-27b-it`. So voice input in the pet onboarding ([pet-onboarding.ko.md](../../pet-onboarding.ko.md) §6.2) uses the **browser Web Speech API** for the transcript and Nemotron only for turning the text into fields. Re-check the list if a speech model is announced.
+`GET /v1/models` with our key (read-only): **25 models** on `api.tokenfactory.nebius.com`, **18** on the us-central1 URL. **No speech-to-text / audio model** (no whisper · asr · speech · audio · parakeet · canary · voxtral). Image-input models in the list: `openbmb/MiniCPM-V-4_5`, `moonshotai/Kimi-K2.6` (and K3 on the first URL), `google/gemma-3-27b-it`. So voice input in the pet profile onboarding ([pet-profile-onboarding.ko.md](../../pet-profile-onboarding.ko.md) §6.2) records audio in the browser, turns it into text with an **external speech-to-text service** (default: Groq Whisper free plan, fallback: Gemini with the paid key — decided at the team meeting after a spike), and uses Nemotron only to extract facts from the text. Re-check the list if a speech model is announced.
 
 ## Photo caption latency (09.1, 2026-10-07)
 
